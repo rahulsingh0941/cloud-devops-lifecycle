@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Clone Repo') {
       steps {
-        git 'https://github.com/Rahulsingh0941/cloud-devops-lifecycle.git'
+        git branch: 'main', url: 'https://github.com/Rahulsingh0941/cloud-devops-lifecycle.git'
       }
     }
 
