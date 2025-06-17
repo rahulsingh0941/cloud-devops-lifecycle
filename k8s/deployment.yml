@@ -11,9 +11,14 @@ spec:
     metadata:
       labels:
         app: cloud-devops-app
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/metrics"
+        prometheus.io/port: "8080"
     spec:
       containers:
-      - name: app-container
-        image: rahul0941/cloud-devops-app:latest
-        ports:
-        - containerPort: 80
+        - name: cloud-devops-app
+          image: rahul0941/cloud-devops-app
+          ports:
+            - containerPort: 8080
+
