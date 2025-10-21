@@ -57,5 +57,5 @@ Map domain name
 
 
 👤 Author
-Rahul Kumar
+Rahul Singh
 DevOps Engineer | AWS | Docker | Kubernetes | CI/CD Pipelines
